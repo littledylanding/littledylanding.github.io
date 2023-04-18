@@ -2,96 +2,73 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
+      value: Jiaqi Ding
     - name: Date of Birth
-      value: 14th March 1879
+      value: 19th June 1999
     - name: Languages
-      value: English, German
+      value: English, Chinese, Cantonese
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: M.ENG in Financial Engineering
+      institution: Cornell University, Ithaca, NY
+      year: 2023
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - Fixed income and Interest rate options
+        - Machine Learning
+        - Monte Carlo Simulation
+    - title: B.Sc. in Mathematics
+      institution: the Chinese University of Hong Kong, Hong Kong
+      year: 2021
       description:
-        - Description 1.
-        - Description 2.
+        - Algorithmic Trading Strategy
+        - Financial Mathematics
+        - Derivatives
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Quantitative Risk Intern
+      institution: PineBridge Investment
+      year: 2023
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+    - title: Quantitative Investment Intern
+      institution: Dongguan Securities, Shanghai, China
+      year: 2022
       description:
-        - Description 1.
-        - Description 2.
+        - Backtested dual thrust and R breaker trading strategies on 40 Chinese futures and improved basic strategies by adding
+          new exiting indicators, which generated 60% return at best over 5 years.
+        - Exploited potential trading signals on index futures and found signals such as “One-minute movement” and “Overnight
+          movement,” which achieved a Sharpe ratio of 1.2.
+        - Created a technical indicator trading strategy independently profiting from consistent growth and volume change, which
+          achieved a return of 130% over 5 years and a Sharpe ratio over 1.5 on stock futures.
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
 
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: 2019-2022
+      items:
+          - Dean’s List
+    - year: 2020-2022
+      items:
+        - Head’s List Merit
+    - year: 2020-2021
       items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
-      items: 
-        - Max Planck Medal
+        - Undergraduate Mathematics Scholarship
 
-- title: Academic Interests
+- title: Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Quantitative Trader
       items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Systematic trading
+        - Market maker
+    - title: Quantitative Researcher
       items:
-        - Description 1.
-        - Description 2.
+        - Low to medium frequency trading
+        - Alternative data trading
 
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
