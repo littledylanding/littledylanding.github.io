@@ -10,9 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>project 1 | Jiaqi  Ding</title>
+    <title>American Options Pricing Using Monte Carlo Method | Jiaqi  Ding</title>
     <meta name="author" content="Jiaqi  Ding">
-    <meta name="description" content="a project with a background image">
+    <meta name="description" content="Cornell University">
     <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
 
 
@@ -106,145 +106,20 @@
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">project 1</h1>
-            <p class="post-description">a project with a background image</p>
+            <h1 class="post-title">American Options Pricing Using Monte Carlo Method</h1>
+            <p class="post-description">Cornell University</p>
           </header>
 
           <article>
-            <p>Every project has a beautiful feature showcase page.
-It’s easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.</p>
+            <p>The pricing of American options is usually limited to the numerical analysis approach. Three types of numerical methods are commonly used for option pricing, including the binomial method, finite-difference method, and Monte Carlo simulation method. The Monte Carlo simulation methods have a significant advantage in dealing with higher dimensional cases and path-dependent option pricing problems.</p>
 
-<p>To give your project a background in the portfolio page, just add the img tag to the front matter like so:</p>
+<p>This project aims to investigate three Monte Carlo simulation methods for pricing American options with a single asset underlying. This project will compare the approaches of Longstaff and Schwartz (2001) and Rogers (2002) with that of Broadie and Glasserman (1997). This project implements each method with the algorithm to generate numerical results and find that Longstaff-Schwartz’s and Rogers’ methods perform better regarding the accuracy and computational time.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
-layout: page
-title: project
-description: a project with a background image
-img: /assets/img/12.jpg
----
-</code></pre></div></div>
+<p>Among the three methods, Roger’s and Longstaff-Schwartz’s methods initially tend to give the point estimate. In comparison, the Broadie-Glasserman approach leads us to have a boundary for the option price. After converting the upper and lower edge for the American option price to a point estimator and comparing it with the first two methods, we found that Roger’s approach and the Longstaff-Schwartz method have better accuracy.</p>
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
+<p>For Rogers’ method, the results obtained when the option is in the money are very close to the true values with good confidence intervals. When the option is out of the money, we obtain wider confidence interval.</p>
 
-  <picture>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/1.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
-
-  <picture>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/3.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
-
-  <picture>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/5.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <figure>
-
-  <picture>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/5.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-<p>You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, <em>bled</em> for your project, and then… you reveal its glory in the next row of images.</p>
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        <figure>
-
-  <picture>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/6.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        <figure>
-
-  <picture>
-    
-
-    <!-- Fallback to the original file -->
-    <img src="/assets/img/11.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="example image" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
-
-  </picture>
-
-</figure>
-
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-<p>The code is simple.
-Just wrap your images with <code class="language-plaintext highlighter-rouge">&lt;div class="col-sm"&gt;</code> and place them inside <code class="language-plaintext highlighter-rouge">&lt;div class="row"&gt;</code> (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/" rel="external nofollow noopener" target="_blank">Bootstrap Grid</a> system).
-To make images responsive, add <code class="language-plaintext highlighter-rouge">img-fluid</code> class to each; for rounded corners and shadows use <code class="language-plaintext highlighter-rouge">rounded</code> and <code class="language-plaintext highlighter-rouge">z-depth-1</code> classes.
-Here’s the code for the last row of images above:</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row justify-content-sm-center"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-8 mt-3 mt-md-0"</span><span class="nt">&gt;</span>
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-sm-4 mt-3 mt-md-0"</span><span class="nt">&gt;</span>
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</code></pre></div></div>
-
+<p>Apart from the price estimator, we find that the computational time is less for Roger’s and Longstaff-Schwartz methods. Since the number of nodes in the tree increases for the Broadie-Glasserman method, the time steps will increase exponentially. It is time-consuming or even unavailable to estimate the derivative price when many exercising opportunities exist.</p>
 
           </article>
 
@@ -255,7 +130,7 @@ Here’s the code for the last row of images above:</p>
     <!-- Footer -->    
     <footer class="fixed-bottom">
       <div class="container mt-0">
-        © Copyright 2023 Jiaqi  Ding. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>.
+        © Copyright 2023 Jiaqi  Ding. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a>. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>.
 
       </div>
     </footer>
