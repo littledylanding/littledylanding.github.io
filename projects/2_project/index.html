@@ -122,10 +122,58 @@
 <p>2.1 Kalman Filter:</p>
 
 <p>This project applied Kalman Filter to dynamically update two important figures, one is the long-short ratio (beta), another is the ASR threshold. First, treat alpha and beta as state variables by transforming the problem into the following linear state space format. Then define absolute standardized residual (ASR) and calculate the conditional variance of forecast error. Additionally, the paper (2021) proposes alternative method to adjust ASR threshold through state variance.</p>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/equation1.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="equation1" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/equation2.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="equation1" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
 
 <p>2.2 Stochastic discount factor (SDF):</p>
 
 <p>One way to formulate dynamic ADF threshold is by solving a system of SDF equations. This project has further imposed an upper and lower bound of the threshold to assure it will fall into a reasonable range.</p>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/equation3.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="equation1" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
 
 <p>2.3 Dynamic conditional correlation (DCC):</p>
 
@@ -167,15 +215,91 @@ This allows us to test cointegration (via ADF) and deviation (via ASR) using one
 <p>4.1 Dynamic Thresholds</p>
 
 <p>The strategy involves two dynamically changing thresholds, ADF and ASR threshold. It’s observed that the threshold levels were low in volatile markets (for instance, in 2008 and 2020), indicating the ability to adjust according to overall market conditions.</p>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
 
-<p>The thresholds would adjust upward when standard deviation of residual increases, suggesting more uncertainty in residual prediction. This allows the strategy to be more conservative when the pairs relationship becomes volatile.</p>
+  <picture>
+    
 
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/ADF.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="equation1" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<p>The graph below is an illustration of how ASR thresholds evolved for a pair. The thresholds would adjust upward when standard deviation of residual increases, suggesting more uncertainty in residual prediction. This allows the strategy to be more conservative when the pairs relationship becomes volatile.</p>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/ASR.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="equation1" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
 <p>4.2 Back-test Results</p>
 
 <p>Both DI and MDR schemes outperformed the benchmark and DI schemes achieved the highest return of 26%. As for drawdown, although the 3 smart beta schemes have reduced certain level of risk, they do not always improve performance relative to benchmark.</p>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
 
+  <picture>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/NAV.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="equation1" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/drawdown.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="equation1" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
 <p>Both MDR and DI outperformed the Benchmark scenario, with higher annualized return and lower maximum drawdown. In terms of risk-return tradeoff, DI and MDR also exceeded the benchmark strategy with higher ratios.</p>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
 
+  <picture>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/metric_proj2.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="equation1" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
 <p>Part V: Conclusion</p>
 
 <p>This project proposed and verified that by incorporating smart beta, including GMV, MDR and DI as alternative asset allocation strategies, the risk-adjusted performance can be further enhanced compared with original pairs trading strategy.</p>
