@@ -17,10 +17,25 @@ Here are several essential statistical analyses leveraged on throughout the impl
 2.1 Kalman Filter:
 
 This project applied Kalman Filter to dynamically update two important figures, one is the long-short ratio (beta), another is the ASR threshold. First, treat alpha and beta as state variables by transforming the problem into the following linear state space format. Then define absolute standardized residual (ASR) and calculate the conditional variance of forecast error. Additionally, the paper (2021) proposes alternative method to adjust ASR threshold through state variance.
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/equation1.jpg" title="equation1" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/equation2.jpg" title="equation1" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 
 2.2 Stochastic discount factor (SDF):
 
 One way to formulate dynamic ADF threshold is by solving a system of SDF equations. This project has further imposed an upper and lower bound of the threshold to assure it will fall into a reasonable range.
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/equation3.jpg" title="equation1" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 
 2.3 Dynamic conditional correlation (DCC):
 
@@ -62,15 +77,36 @@ Part IV: Empirical finding
 4.1 Dynamic Thresholds 
 
 The strategy involves two dynamically changing thresholds, ADF and ASR threshold. It's observed that the threshold levels were low in volatile markets (for instance, in 2008 and 2020), indicating the ability to adjust according to overall market conditions.
-
-The thresholds would adjust upward when standard deviation of residual increases, suggesting more uncertainty in residual prediction. This allows the strategy to be more conservative when the pairs relationship becomes volatile.
-
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/ADF.jpg" title="equation1" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+The graph below is an illustration of how ASR thresholds evolved for a pair. The thresholds would adjust upward when standard deviation of residual increases, suggesting more uncertainty in residual prediction. This allows the strategy to be more conservative when the pairs relationship becomes volatile.
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/ASR.jpg" title="equation1" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 4.2 Back-test Results
 
 Both DI and MDR schemes outperformed the benchmark and DI schemes achieved the highest return of 26%. As for drawdown, although the 3 smart beta schemes have reduced certain level of risk, they do not always improve performance relative to benchmark.
-
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/NAV.jpg" title="equation1" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/drawdown.jpg" title="equation1" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 Both MDR and DI outperformed the Benchmark scenario, with higher annualized return and lower maximum drawdown. In terms of risk-return tradeoff, DI and MDR also exceeded the benchmark strategy with higher ratios.
-
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/metric_proj2.jpg" title="equation1" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
 Part V: Conclusion 
 
 This project proposed and verified that by incorporating smart beta, including GMV, MDR and DI as alternative asset allocation strategies, the risk-adjusted performance can be further enhanced compared with original pairs trading strategy.
